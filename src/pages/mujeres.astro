@@ -1,0 +1,77 @@
+---
+import Layout from "../layouts/layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout titulo="Mujeres referentes | Mujeres en Tecnología">
+  <section class="encabezado">
+    <h1>Mujeres referentes</h1>
+    <p>
+      Conoce a algunas de las mujeres que dejaron una huella importante en
+      la historia de la tecnología.
+    </p>
+  </section>
+
+  <section class="contenedor">
+    <div class="tarjetas">
+      <Card
+        nombre="Ada Lovelace"
+        descripcion="Nació en 1815 y fue una matemática británica. Es reconocida por escribir uno de los primeros algoritmos destinados a ser procesados por una máquina."
+        imagen="/images/ada.jpg"
+        alt="Retrato histórico de Ada Lovelace"
+      />
+
+      <Card
+        nombre="Grace Hopper"
+        descripcion="Fue una científica informática estadounidense que contribuyó al desarrollo de los lenguajes de programación y del lenguaje COBOL."
+        imagen="/images/grace.jpg"
+        alt="Retrato de Grace Hopper"
+      />
+
+      <Card
+        nombre="Katherine Johnson"
+        descripcion="Fue una matemática estadounidense cuyos cálculos ayudaron al éxito de importantes misiones espaciales de la NASA."
+        imagen="/images/katherine.jpg"
+        alt="Retrato de Katherine Johnson"
+      />
+
+      <Card
+        nombre="Hedy Lamarr"
+        descripcion="Fue inventora y actriz. Junto a George Antheil desarrolló un sistema de salto de frecuencia para las comunicaciones."
+        imagen="/images/Hedy_Lamarr_Publicity_Photo_for_The_Heavenly_Body_1944.jpg"
+        alt="Retrato de Hedy Lamarr"
+      />
+    </div>
+  </section>
+</Layout>
+
+<style>
+      .encabezado {
+        text-align: center;
+        padding: 65px 20px;
+        background-color: #ead8ff;
+      }
+
+      .encabezado h1 {
+        font-size: 38px;
+        margin-bottom: 15px;
+      }
+
+      .encabezado p {
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .tarjetas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding-top: 45px;
+      }
+
+      @media (max-width: 650px) {
+        .tarjetas {
+          grid-template-columns: 1fr;
+        }
+      }
+</style>

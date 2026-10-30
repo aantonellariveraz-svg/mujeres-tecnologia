@@ -1,0 +1,128 @@
+
+---
+import Layout from "../layouts/layout.astro";
+---
+
+<Layout titulo="Sus aportes | Mujeres en Tecnología">
+  <section class="encabezado">
+    <h1>Sus aportes a la tecnología</h1>
+    <p>
+      Sus ideas y descubrimientos ayudaron a construir
+      parte de la tecnología que conocemos actualmente.
+    </p>
+  </section>
+
+  <section class="contenedor aportes">
+    <article class="aporte">
+      <h2>01. Ada Lovelace</h2>
+      <p>
+        Escribió un algoritmo para la máquina analítica de
+        Charles Babbage. Su trabajo fue una base importante
+        para la historia de la programación.
+      </p>
+    </article>
+
+    <article class="aporte">
+      <h2>02. Grace Hopper</h2>
+      <p>
+        Ayudó a impulsar los lenguajes de programación
+        cercanos al lenguaje humano y participó en el
+        desarrollo de COBOL, utilizado en informática.
+      </p>
+    </article>
+
+    <article class="aporte">
+      <h2>03. Katherine Johnson</h2>
+      <p>
+        Realizó cálculos que permitieron planificar
+        trayectorias de vuelos espaciales. Su trabajo
+        fue fundamental para las misiones de la NASA.
+      </p>
+    </article>
+
+    <article class="aporte">
+      <h2>04. Hedy Lamarr</h2>
+      <p>
+        Desarrolló junto a George Antheil una técnica
+        de salto de frecuencia, que influyó en el
+        desarrollo de futuras tecnologías de comunicación.
+      </p>
+    </article>
+  </section>
+
+  <section class="final">
+    <h2>Un legado que continúa</h2>
+    <p>
+      Estas mujeres demostraron que la creatividad,
+      el conocimiento y la innovación no tienen límites.
+      Sus historias nos inspiran a seguir aprendiendo
+      y participando en el mundo de la tecnología.
+    </p>
+  </section>
+</Layout>
+
+<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+.encabezado {
+  text-align: center;
+  padding: 65px 20px;
+  background-color: #ead8ff;
+}
+
+.encabezado h1 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.encabezado p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.aportes {
+  padding-top: 40px;
+}
+
+.aporte {
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 22px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px #00000012;
+  border-left: 5px solid #a77ac7;
+}
+
+.aporte h2 {
+  margin-bottom: 12px;
+}
+
+.aporte p {
+  line-height: 1.8;
+}
+
+.final {
+  background-color: #ead8ff;
+  text-align: center;
+  padding: 50px 20px;
+  margin-top: 40px;
+}
+
+.final h2 {
+  margin-bottom: 15px;
+}
+
+.final p {
+  max-width: 750px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+  .encabezado h1 {
+    font-size: 29px;
+  }
+}
+</style>

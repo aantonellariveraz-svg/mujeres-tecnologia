@@ -1,0 +1,37 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #faf7ff;
+  color: #352449;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  color: #653b85;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .contenedor {
+    width: 94%;
+  }
+}

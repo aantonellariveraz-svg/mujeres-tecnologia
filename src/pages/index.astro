@@ -1,0 +1,89 @@
+---
+import Layout from "../layouts/layout.astro";
+import Hero from "../components/Hero.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout titulo="Inicio | Mujeres en Tecnología">
+  <Hero />
+
+  <section class="contenedor introduccion">
+    <h2>Una historia que merece ser contada</h2>
+
+    <p>
+      A lo largo de la historia, muchas mujeres han realizado
+      importantes aportes a la ciencia, la programación y la
+      informática. Gracias a sus conocimientos y descubrimientos,
+      hoy contamos con tecnologías que utilizamos diariamente.
+    </p>
+
+    <h2>Algunas mujeres que hicieron historia</h2>
+
+    <div class="tarjetas">
+      <Card
+        nombre="Ada Lovelace"
+        descripcion="Fue una pionera de la programación y escribió un algoritmo para la máquina analítica."
+        imagen="/images/ada.jpg"
+        alt="Retrato de Ada Lovelace"
+      />
+
+      <Card
+        nombre="Grace Hopper"
+        descripcion="Fue una importante científica informática y participó en el desarrollo de COBOL."
+        imagen="/images/grace.jpg"
+        alt="Retrato de Grace Hopper"
+      />
+
+      <Card
+        nombre="Katherine Johnson"
+        descripcion="Realizó cálculos matemáticos fundamentales para las misiones espaciales de la NASA."
+        imagen="/images/katherine.jpg"
+        alt="Retrato de Katherine Johnson"
+      />
+    </div>
+
+    <a class="boton" href="/mujeres">Conocer más mujeres</a>
+  </section>
+</Layout>
+
+<style>
+.introduccion {
+  padding-top: 55px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.introduccion h2 {
+  margin-bottom: 20px;
+  margin-top: 35px;
+}
+
+.introduccion > p {
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.boton {
+  display: inline-block;
+  background: #653b85;
+  color: white;
+  padding: 14px 25px;
+  border-radius: 25px;
+  margin-top: 35px;
+}
+
+@media (max-width: 700px) {
+  .tarjetas {
+    grid-template-columns: 1fr;
+  }
+}
+</style>

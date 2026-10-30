@@ -1,0 +1,39 @@
+---
+const { nombre, descripcion, imagen, alt } = Astro.props;
+---
+<article class="tarjeta">
+    <img src={imagen} alt={alt} />
+
+    <div class="contenido">
+        <h3>{nombre}</h3>
+        <p>{descripcion}</p>
+    </div>
+</article>
+
+<style>
+    .tarjeta {
+        background-color: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px #00000015;
+    }
+
+    .tarjeta img {
+        display: block;
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+    }
+
+    .contenido {
+        padding: 20px;
+    }
+
+    .contenido h3 {
+        margin-bottom: 12px;
+    }
+
+    .contenido p {
+        line-height: 1.6;
+    }
+</style>

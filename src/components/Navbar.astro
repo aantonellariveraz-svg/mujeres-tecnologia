@@ -1,0 +1,58 @@
+---
+---
+
+
+<nav class="navbar">
+  <div class="logo">Mujeres en Tecnología</div>
+
+  <div class="menu">
+    <a href="/">Inicio</a>
+    <a href="/mujeres">Mujeres referentes</a>
+    <a href="/aportes">Sus aportes</a>
+  </div>
+</nav>
+
+<style>
+.navbar {
+  background-color: #653b85;
+  color: white;
+  padding: 22px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: white;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #f3c7ff;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .menu {
+    justify-content: center;
+    gap: 12px;
+  }
+}
+</style>
+
